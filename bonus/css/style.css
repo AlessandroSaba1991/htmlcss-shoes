@@ -1,0 +1,77 @@
+/* Reset page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility */
+
+:root{
+    --text-box1: yellow;
+    --bg-box1: red;
+    --text-box2: yellow;
+    --bg-box2: green;
+    --text-box3: green;
+    --bg-box3: yellow;
+}
+
+.container{
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.box{
+    height: 100vh;
+    position: relative;
+}
+
+.img{
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.img > p{
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+
+.button{
+    position: fixed;
+    top: 40px;
+    right: 10px;
+    z-index: 1;
+}
+
+/* Main */
+
+
+.button > a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 15px 19px;
+    margin: 0px 15px;
+    border-radius: 50%;
+}
+
+.red{
+    background-color: var(--bg-box1);
+    color: var(--text-box1);
+}
+.green{
+    background-color: var(--bg-box2);
+    color: var(--text-box2);
+}
+
+.yellow{
+    background-color: var(--bg-box3);
+    color: var(--text-box3);
+}
